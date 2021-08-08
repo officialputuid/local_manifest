@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="officialputuid" fetch="https://github.com" />
+    <!-- Github remote -->
+    <remote name="github" fetch="https://github.com/" />
 
     <!-- Sync trees -->
-    <project path="device/realme/mt6785-common" name="android_device_realme_mt6785-common" remote="officialputuid" revision="11" />
-    <project path="device/realme/RMX2001" name="android_device_realme_RMX2001" remote="officialputuid" revision="11" />
-    <project path="kernel/realme/RMX2001" name="android_kernel_realme_RMX2001" remote="officialputuid" revision="11" clone-depth="1" />
-    <project path="vendor/realme" name="proprietary_vendor_realme" remote="officialputuid" revision="11" />
-    <project path="packages/apps/RealmeParts" name="android_packages_apps_RealmeParts" remote="officialputuid" revision="11" />
-    <project path="packages/apps/RealmeDirac" name="android_packages_apps_RealmeDirac" remote="officialputuid" revision="11" />
+    <project path="device/realme/mt6785-common" name="officialputuid/android_device_realme_mt6785-common" remote="github" revision="11" />
+    <project path="device/realme/RMX2001" name="officialputuid/android_device_realme_RMX2001" remote="github" revision="11" />
+    <project path="kernel/realme/RMX2001" name="officialputuid/android_kernel_realme_RMX2001" remote="github" revision="11" clone-depth="1" />
+    <project path="vendor/realme" name="officialputuid/proprietary_vendor_realme" remote="github" revision="11" />
+
+    <!-- Packages Apps -->
+    <project path="packages/apps/RealmeParts" name="officialputuid/android_packages_apps_RealmeParts" remote="github" revision="11" />
+    <project path="packages/apps/RealmeDirac" name="officialputuid/android_packages_apps_RealmeDirac" remote="github" revision="11" />
 </manifest>
