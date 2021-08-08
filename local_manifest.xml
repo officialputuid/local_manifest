@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- Github remote -->
-    <remote name="github" fetch="https://github.com/" />
+    <!-- myself -->
+    <remote name="officialputuid" fetch="https://github.com/" />
 
     <!-- Sync trees -->
-    <project path="device/realme/mt6785-common" name="officialputuid/android_device_realme_mt6785-common" remote="github" revision="11" />
-    <project path="device/realme/RMX2001" name="officialputuid/android_device_realme_RMX2001" remote="github" revision="11" />
-    <project path="kernel/realme/RMX2001" name="officialputuid/android_kernel_realme_RMX2001" remote="github" revision="11" clone-depth="1" />
-    <project path="vendor/realme" name="officialputuid/proprietary_vendor_realme" remote="github" revision="11" />
+    <project path="device/realme/mt6785-common" name="officialputuid/android_device_realme_mt6785-common" remote="officialputuid" revision="11-test" />
+    <project path="device/realme/RMX2001" name="officialputuid/android_device_realme_RMX2001" remote="officialputuid" revision="11-exthmui" />
+    <project path="kernel/realme/RMX2001" name="officialputuid/android_kernel_realme_RMX2001" remote="officialputuid" revision="11" clone-depth="1" />
+    <project path="vendor/realme" name="officialputuid/proprietary_vendor_realme" remote="officialputuid" revision="11" />
+    <project path="packages/apps/RealmeParts" name="officialputuid/android_packages_apps_RealmeParts" remote="officialputuid" revision="11" />
+    <project path="packages/apps/RealmeDirac" name="officialputuid/android_packages_apps_RealmeDirac" remote="officialputuid" revision="11" />
 
-    <!-- Packages Apps -->
-    <project path="packages/apps/RealmeParts" name="officialputuid/android_packages_apps_RealmeParts" remote="github" revision="11" />
-    <project path="packages/apps/RealmeDirac" name="officialputuid/android_packages_apps_RealmeDirac" remote="github" revision="11" />
+    <!-- another -->
+    <project path="prebuilts/clang/host/linux-x86/clang-proton" name="officialputuid/proton-clang" remote="officialputuid" revision="master" clone-depth="1" />
 </manifest>
